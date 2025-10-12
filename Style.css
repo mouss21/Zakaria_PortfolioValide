@@ -33,8 +33,23 @@ body {
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 1;
+  background: linear-gradient(-45deg, red,green,rgb(255, 140, 0),rgb(0, 179, 255));
+  background-size: 400% 400%;
+  animation: animate 20s ease infinite;
 }
 
+@keyframes animate {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: O 50%;
+  }
+}
 .dark {
   --clr-bg: #23283e;
   --clr-bg-alt: #2a2f4c;
@@ -701,5 +716,3 @@ hr.section-border {
     box-shadow: -6px 6px 10px 2px rgba(0, 0, 0, 0.6), 1px 1px 4px 1px rgba(0, 0, 0, 0.4) inset;
   }
 }
-
-
